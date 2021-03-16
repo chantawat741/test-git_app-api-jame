@@ -9,6 +9,11 @@ app.get("/data", (req, res) => {
     res.json({ message: "get DATA" })
 })
 
+app.get("/profile", (req, res) => {
+    // ? SHOW
+    res.json({ name: "Chantawat Thanyaphatarin", nickname: "Jame" })
+})
+
 app.post("/", (req, res) => {
     // ? POST
     res.json({ message: "create DATA" })
